@@ -1,10 +1,17 @@
-# Exponentation represented by **
+# Exponentiation operator  (**)
 print(3**6)
-# Remainder is obtained when % is used 
+
+# Modulus operator 
 print(51 % 7)
-# // means integer division is same as the regular division but the result is rounded down.
+
+# // Integer division 
 print(26//5)
+
 # / is division
 print(23 / 5)
-# *,-,+ are multiplication , subtraction and addition respectively.
+
+# Addition
 print(2+7)
+
+# Subtraction
+print(9-5)

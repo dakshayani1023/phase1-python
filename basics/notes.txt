@@ -1,0 +1,18 @@
+MATH OPERATORS IN PYTHON 
+
+1. Exponentiation ( ** ) 
+ x**y , this means x raised to the power of y . 
+
+2. Modulus/remainder ( % ) 
+ x % y , this gives the remainder when x is divided by y . 
+
+3. Integer division ( // ) 
+Integer division is same as the regular division but the result is rounded down to the nearest integer . 
+
+4. Division ( / ) 
+This division gives floating point number .  
+
+5. Other arithmetic operators 
+* Multiplication 
++ addition
+- subtraction 
