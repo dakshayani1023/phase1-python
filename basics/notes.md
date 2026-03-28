@@ -273,7 +273,7 @@ spam = 6
 print(3 + 3 == spam and not 3 + 3 == spam + 1)
 ```
 Output : `True`
-Explanation : Here not 3 + 3 == spam + 1 means "Is it True that (3+3) is not equal to (spam+1) and the Boolean value on the either sides of and is True the final output is True.
+Explanation : Here not 3 + 3 == spam + 1 means "Is it True that (3+3) is not equal to (spam+1)" and the Boolean value on the either sides of and is True the final output is True.
 
 ---
 ## COMPONENTS OF FLOW CONTROL
@@ -344,3 +344,86 @@ if True:                # new block starts again
 ```
 
 ---
+## FLOW CONTROL STATEMENTS 
+### 1. if statement
+- It is the most common type of flow control statement.
+- An if statement's clause will execute if the statement's condition is True.
+- The clause is skipped if the condition is False.
+* CLAUSE : It is the block following the if statement.
+
+- In python, an if statement conists
+1. The if keyword.
+2. A condition (an expressin that evaluates to True or False)
+3. A colon(:)
+4. Starting the next line after the condition with an indented block of code (called the if clause or if block)
+Example : 
+```python
+name = 'Addison'
+if name == 'Addison'
+   print('Hi, Addison.')
+```
+Output : `Hi, Addison`
+
+---
+### 2. else statement
+- The else clause is executed only when the if statement is False.
+- Anelse statement always consists of :
+1. The else keyword
+2. A colon
+3. Starting the next line after the condition with an indented block of code(called the else clause or else block)
+Example: 
+```python
+name = 'Emma'
+if name == 'Emma':
+   print('Hi, Emma')
+else:
+   print('Hello, stranger')
+```
+Output : `Hi, Emma`
+
+---
+### 3. elif statement (else if)
+- We use if or else when you want only one of the clauses to execute.
+- An elif statement is used to check multiple conditions sequentially after an initial if statement.
+
+### HOW elif WORKS
+1. Python checks the initial if condition first.
+2. If the if condition is False, Python moves to the first elif condition and evaluates it and this process continues until the condition is found.
+3. Once a condition is met, the programs skips all remaning elif and else conditions.
+4. If none of the if and elif conditions are True, the optional else block at the end will be executed.
+Example :
+```python
+age = 25
+if age < 18:
+   print("You are a minor.")
+elif age >= 18 and age < 65:   
+   print("You are an adult.")
+else:
+   print("Your are a senior citizen.")
+```
+Output : `You are an adult.`
+---
+### Example:
+```python
+name = 'Carol'
+age = 3000
+if name == 'Alice':
+    print('Hi, Alice.') # Check the most specific/extreme case first
+elif age > 2000:
+   print('Unlike you, Alice is not an undead, immortal vampire.')
+elif age > 100:  # This will only be checked if age is NOT over 2000
+    print('You are not Alice, grannie.')
+elif age < 12:
+    print('You are not Alice, kiddo.')
+```
+Output : `Unlike you, Alice is not an undead, immortal vampire.`
+---
+### NOTE
+- A quick rule:
+1. When using >(greater than), start with the highest number and work your way down.
+2. When using <(less than), start with the lowest number and work your way down.
+
+
+
+
+
