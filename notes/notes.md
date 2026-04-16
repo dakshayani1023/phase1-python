@@ -429,7 +429,7 @@ Output : `Unlike you, Alice is not an undead, immortal vampire.`
 1. When using >(greater than), start with the highest number and work your way down.
 2. When using <(less than), start with the lowest number and work your way down.
  
-#  ------------------- CHAPTER-3 (LOOPS) ----------- 
+#  ------------------- CHAPTER-3 (LOOPS) -------
 - Python has 2 kinds of loops, 'while' and 'for'. 
 ## 1. while Loop Statements 
 - A block of code is executed over and over again using a while loop statement. 
@@ -464,4 +464,41 @@ Output : 1
          5
          6
 
-## 
+## Infinite loop: 
+- If the condition never becomes false, the loop runs forever.
+Ex: 
+```python
+x = 0 
+while x < 5:
+   print(x) 
+```
+(In the above example - x is never updated -> Infinite loop)
+
+## break Statements
+- To get the program execution break out of a while's loop clause early we use a break statement.
+- A break statement simply contains the keyword break.
+- The loop stops when the program reaches the keyword break.
+Example:
+```python
+while True:
+   print("What is your name?")
+   name = input()
+   if name == "Audrey":
+       break # Indented further because it's inside the 'if' block
+print("Hi Audrey!, Nice to meet you.")
+``` 
+Explanation:
+1. Since we already used while true, the loop will never stop on it's own.
+2. The break is the only way out.
+3. If name == "Audery" is False. Python ignores the break and goes back to the top of the loop to ask the question again.
+4. If name == "Audery" is True. Python hits the break, jumps out of the loop immediately and prints the "Nice to meet you."message.
+
+Example:
+```python
+while True:
+    print(" Hi! My name is Leah.")
+    break 
+    print(" This will never run.") 
+```
+Output: Hi! My name is Leah. 
+
