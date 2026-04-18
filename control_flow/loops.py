@@ -10,6 +10,7 @@ while spam < 5:
     spam = spam + 1 
 # Output: I am not sleepy, printed 5 times, because the while loop continues to execute as long as the condition spam < 5 is true. The value of spam is incremented by 1 in each iteration(i.e, each time the loop is executed), and once it reaches 5, the condition becomes false and the loop terminates.
 
+
 # An annoying while loop 
 name = ""
 while name != "your name":
@@ -18,6 +19,7 @@ while name != "your name":
 print("Thank you!") # Un-indented, so it is not part of the while loop and will only be executed once the loop has terminated i.e, once the condition becomes false.
 # In this code, the while loop will continue to prompt the user to "Please type your name." until the user types "your name". Once the user types "your name", the condition name != "your name" becomes false, and the loop terminates. After the loop has terminated, it will print "Thank you!".
 
+
 # break statement
 while True: # This creates an infinite loop because the condition is always true.
     print("Please enter your name.")
@@ -25,6 +27,7 @@ while True: # This creates an infinite loop because the condition is always true
     if name == "Ellie":
         break # This will exit the loop when the user types "Ellie".
 print("Thank you!") # This will be executed after the loop is exited, which happens when the user types "Ellie".
+
 
 # continue statement
 while True:
@@ -37,3 +40,20 @@ while True:
     if password == "Falcon":
         break # This will exit the loop when the user types "Falcon" as the password.
 print("Access granted.") # This will be executed after the loop is exited, which happens when the user types "Raya" as the name and "Falcon" as the password.
+
+
+# Truthy and Falsy values
+name = ''
+while not name: # This condition will be true as long as name is an empty string or contains only whitespace characters, which are considered falsy values in Python.
+    print('Enter your name:') # 
+    name = input()
+print('How many guests will you have?')
+num_of_guests = int(input()) # This will convert the user input into an integer and store it in the variable num_of_guests.
+if num_of_guests:
+    print('Be sure to have enough room for all your guests.')
+print('Done')
+
+
+print(bool(' ')) # This will print True because a string with a space is considered a truthy value in Python.
+print(bool(''))  # This will print False because an empty string is considered a falsy value in Python.
+print(bool(0))   # This will print False because the integer 0 is considered a falsy value in Python.

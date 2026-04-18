@@ -516,3 +516,32 @@ Output: The above line of code will keep printing Hello, world! until you press 
 
 ## continue Statements 
 - When the program execution reaches a continue statement, it jumps back to the start of the loop and reevaluates the loop's condition. 
+
+## TRUTHY and FALSEY values and the BOOL() function
+- When used in conditions 0, 0.0, ''(empty string without a space), [](empty list),None are considered False.
+- All the other values (ex: ' ', any integer, "",etc) are considered True.
+
+Example: 
+```python
+name = ''
+while not name:
+   print('Enter your name':)
+   name = input()
+```
+Explanation: 
+name = ''
+
+- An empty string ('') is considered False in Python.
+
+- Condition:
+while not name
+
+- Step-by-step:
+bool(name) → False  (when you print bool(name) the output will be False.)
+not False → True  
+
+- So, the condition becomes True and the loop runs.
+
+- The program prints "Enter your name" and waits for user input.
+
+
